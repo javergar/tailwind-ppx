@@ -12,9 +12,8 @@
   },
   "esy": {
     "build": "dune build -p #{self.name}",
-    "buildEnv": { "ODOC_SYNTAX": "re" },
     "buildsInSource": "_build",
-    "release": { "bin": ["Bin", "UsePpx"] }
+    "release": { "bin": ["tailwind-ppx", "use-tailwind-ppx"] }
   },
   "dependencies": {
     "@opam/dune": "1.11.4",
@@ -30,7 +29,6 @@
     "@opam/dune-release": "*",
     "@opam/ocamlformat": "*",
     "@opam/merlin": "*",
-    "@opam/odoc": "*",
     "@opam/utop": "*",
     "@reason-native/rely": "*",
     "refmterr": "*"
